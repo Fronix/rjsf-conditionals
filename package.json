@@ -1,12 +1,12 @@
 {
-  "name": "rjsf-conditionals",
+  "name": "@fronix/rjsf-conditionals",
   "description": "Extension of @rjsf/core with conditional field support",
   "private": false,
   "contributors": [
     "mavarazy <mavarazy@gmail.com>",
     "Aivaras Prudnikovas <ivar.prudnikov@gmail.com>"
   ],
-  "version": "1.5.0",
+  "version": "1.5.1",
   "scripts": {
     "build": "rimraf dist lib && npm run build:umd && npm run build:cjs && npm run build:es && npm run build:es:lib",
     "build:umd": "cross-env NODE_ENV=production BABEL_ENV=umd webpack --config webpack.config.dist.js",
@@ -53,7 +53,7 @@
     "@rjsf/core": ">=2.0.0",
     "core-js": "^2.5.7",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0"
+    "react": "^16.9.0 || >=17"
   },
   "dependencies": {
     "deepcopy": "^2.0.0",
@@ -67,11 +67,11 @@
     "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/plugin-transform-object-assign": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.21.0",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
-    "@babel/runtime-corejs2": "^7.8.7",
+    "@babel/runtime-corejs3": "^7.21.0",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
